@@ -1,0 +1,35 @@
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: $grid-gap;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-section {
+    padding: 48px 0;
+  }
+
+  .portfolio {
+    row-gap: calc(2 * $grid-gap);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-section {
+    padding: 64px 0 96px;
+  }
+
+  .portfolio {
+    row-gap: calc(3 * $grid-gap);
+  }
+}
+
+@media screen and (min-width: 1158) {
+  .portfolio-section {
+    padding: 64px 0 96px;
+  }
+
+  .portfolio {
+    row-gap: calc(2 * $grid-gap);
+  }
+}

@@ -1,0 +1,63 @@
+.team {
+  background-color: $light-mode-color;
+}
+
+.team__list {
+  display: flex;
+}
+
+.team__card {
+  background-color: $main-background-color;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team__desc-container {
+  padding: 32px 0;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__employee-name {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.team__position {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .team__list {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .team__card {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: $grid-gap;
+    row-gap: 72px;
+    padding: 0 92px;
+  }
+
+  .team__card {
+    max-width: calc((100% - $grid-gap) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team__list {
+    gap: $grid-gap;
+  }
+}

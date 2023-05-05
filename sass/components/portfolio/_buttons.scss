@@ -1,0 +1,53 @@
+.buttons-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $grid-gap;
+  margin-bottom: 48px;
+}
+
+.buttons-list__item {
+  flex-grow: 1;
+}
+
+.buttons-list__portfolio-btn {
+  flex-grow: 1;
+  width: 100%;
+  background-color: $portfolio-btn-color;
+  color: $primary-brand-color;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  transition: background-color $transition-dur-func, color $transition-dur-func,
+    box-shadow $transition-dur-func, border $transition-dur-func,
+    border-radius $transition-dur-func;
+}
+
+.buttons-list__portfolio-btn:hover,
+.buttons-list__portfolio-btn:focus {
+  background-color: $btn-hover-color;
+  color: #fff;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-list__item {
+    flex-grow: 0;
+  }
+  .buttons-list {
+    flex-wrap: nowrap;
+    margin-bottom: 72px;
+  }
+}

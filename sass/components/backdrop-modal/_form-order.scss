@@ -1,0 +1,130 @@
+.form-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.form-order__label {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 12px;
+  line-height: 1.17;
+  color: #8e8f99;
+}
+
+.form-order__label:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.form-order__input-wrapper {
+  position: relative;
+}
+
+.form-order__input {
+  margin-top: 4px;
+  padding: 8px 8px 8px 38px;
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  transition: border $transition-dur-func;
+
+  &__input:focus {
+    outline: none;
+    border: 1px solid $primary-brand-color;
+  }
+}
+
+.form-order__input-img {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 18px;
+  height: 24px;
+  fill: $dark-mode-color;
+  transition: fill $transition-dur-func;
+}
+
+.form-order__input:focus + .form-order__input-img {
+  fill: $primary-brand-color;
+}
+
+.form-order__textarea {
+  margin-top: 4px;
+  padding: 8px 8px 8px 16px;
+  height: 120px;
+  resize: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  transition: border $transition-dur-func;
+}
+
+.form-order__textarea:focus {
+  outline: none;
+  border: 1px solid $primary-brand-color;
+}
+
+.form-order__textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.form-order__agreement-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  color: #8e8f99;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.form-order__agreement-text::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color $transition-dur-func, border $transition-dur-func;
+}
+
+.form-order__agreement-check:checked + .form-order__agreement-text::before {
+  background-color: $btn-hover-color;
+  border: 1px solid $btn-hover-color;
+  background-image: url(../images/icon-mdl-check.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.form-order__agreement-check:focus + .form-order__agreement-text::before {
+  border: 1px solid $primary-brand-color;
+}
+
+.form-order__send-btn {
+  border: none;
+  align-self: center;
+  justify-self: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $hero-text-color;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  background-color: $primary-brand-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color $transition-dur-func;
+  cursor: pointer;
+}
+
+.form-order__send-btn:hover,
+.form-order__send-btn:focus {
+  background-color: $btn-hover-color;
+}

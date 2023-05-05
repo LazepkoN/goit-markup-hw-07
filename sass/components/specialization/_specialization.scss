@@ -1,0 +1,20 @@
+@media screen and (max-width: 1157px) {
+  .specialization {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .specialization {
+    padding-bottom: 120px;
+  }
+
+  .specialization__list {
+    display: flex;
+    gap: $grid-gap;
+  }
+
+  .specialization__item {
+    width: calc((100% - $grid-gap * 2) / 3);
+  }
+}

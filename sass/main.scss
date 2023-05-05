@@ -1,0 +1,46 @@
+// Utilities
+@import './utils/vars';
+@import './utils/bases';
+@import './utils/utils';
+
+// Components
+@import './components/logo';
+@import './components/social-list';
+
+//========== Main page ==========
+
+// Header
+@import './components/header/header';
+@import './components/header/nav';
+@import './components/header/contacts';
+@import './components/header/mob-menu';
+
+// Hero
+@import './components/hero/hero';
+@import './components/hero/order-btn';
+
+//Our preferences
+@import './components/preferences/preferences';
+
+//Specialization
+@import './components/specialization/specialization';
+
+// Our Team
+@import './components/our-team/team';
+
+// Customers
+@import './components/customers/customers';
+
+// Footer
+@import './components/footer/footer';
+@import './components/sub-form/sub-form';
+
+//Backdrop - modal
+@import './components/backdrop-modal/backdrop';
+@import './components/backdrop-modal/modal';
+@import './components/backdrop-modal/form-order';
+
+//========== Portfolio page ==========
+@import './components/portfolio/portfolio';
+@import './components/portfolio/buttons';
+@import './components/portfolio/portfolio-card';

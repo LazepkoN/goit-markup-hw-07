@@ -1,0 +1,40 @@
+.order-btn {
+  background-color: $primary-brand-color;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: $hero-text-color;
+
+  cursor: pointer;
+
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin: 72px auto 0 auto;
+
+  transition: background-color $transition-dur-func;
+}
+
+@media screen and (min-width: 768px) {
+  .order-btn {
+    margin: 36px auto 0 auto;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .order-btn {
+    margin: 48px auto 0 auto;
+  }
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  background-color: $btn-hover-color;
+}

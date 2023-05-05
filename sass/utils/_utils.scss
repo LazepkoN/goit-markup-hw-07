@@ -1,0 +1,85 @@
+// .container {
+//   outline: 2px solid tomato;
+
+//   width: 1158px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }
+
+.container {
+  // outline: 2px solid tomato;
+
+  width: 100%;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    padding: 0 15px;
+    width: 1158px;
+  }
+}
+
+// .section {
+//   padding: 120px 0;
+// }
+
+.section {
+  padding: 96px 0;
+}
+
+@media screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $dark-mode-color;
+
+  margin-bottom: 72px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: $dark-mode-color;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 767px) {
+  .card-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}

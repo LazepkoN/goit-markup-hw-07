@@ -1,0 +1,33 @@
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+
+.contacts {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contacts__link {
+  color: inherit;
+  transition: color $transition-dur-func;
+}
+
+@media screen and (min-width: 1158px) {
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .contacts__link {
+    display: block;
+    padding: 24px 0;
+  }
+}

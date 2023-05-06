@@ -15,6 +15,7 @@
   }
 
   .specialization__item {
+    // display: block;
     width: calc((100% - $grid-gap * 2) / 3);
   }
 }

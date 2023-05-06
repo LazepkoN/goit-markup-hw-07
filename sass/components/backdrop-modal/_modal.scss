@@ -4,7 +4,7 @@
   // left: 50%;
   // transform: translate(-50%, -50%);
   max-width: 392px;
-  margin: 0 5px;
+  margin: 96px 5px 96px;
   padding: 72px 16px 24px 16px;
   background-color: #fcfcfc;
 }
@@ -49,5 +49,11 @@
   .modal {
     width: 408px;
     padding: 72px 24px 24px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .modal {
+    margin: 80px 5px 80px;
   }
 }

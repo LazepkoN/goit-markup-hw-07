@@ -33,9 +33,10 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer__container {
-    padding: 0 92px;
+    width: 552px;
+    padding: 0;
     flex-wrap: wrap;
     column-gap: $grid-gap;
     row-gap: 72px;

@@ -33,7 +33,7 @@
 
   .nav__link--current::after {
     position: absolute;
-    bottom: -1px;
+    bottom: 1px;
     display: block;
     content: '';
     width: 100%;

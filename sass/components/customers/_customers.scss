@@ -36,8 +36,12 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
+  .customers__container {
+    width: 552px;
+    padding: 0;
+  }
   .customers__list {
-    padding: 0 92px;
+    // padding: 0 92px;
     column-gap: $grid-gap;
   }
 
@@ -53,6 +57,7 @@
 @media screen and (min-width: 1158px) {
   .customers__list {
     flex-wrap: nowrap;
+    gap: $grid-gap;
   }
 
   .customers__item {

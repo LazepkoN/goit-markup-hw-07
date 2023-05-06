@@ -43,12 +43,16 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
+  .team__container {
+    width: 552px;
+    padding: 0;
+  }
   .team__list {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: $grid-gap;
     row-gap: 72px;
-    padding: 0 92px;
+    // padding: 0 92px;
   }
 
   .team__card {

@@ -28,7 +28,7 @@
   border-radius: 4px;
   transition: border $transition-dur-func;
 
-  &__input:focus {
+  &:focus {
     outline: none;
     border: 1px solid $primary-brand-color;
   }

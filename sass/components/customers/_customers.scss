@@ -2,12 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 10px;
+  column-gap: 16px;
   row-gap: 72px;
 }
 
 .customers__item {
-  width: calc((100% - 10px) / 2);
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 
